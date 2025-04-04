@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Atkinson Hyperlegible Next', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('capture.jpg') no-repeat center center fixed; /* Add your image here */
+    background-size: cover; /* This will make the background cover the entire viewport */
+    background-color:	#205b7a;
+}
+
+.calculator {
+    border: 1px solid #777171;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 3px 15px rgba(46, 197, 0, 0.5);
+}
+
+.title {
+    color: #1c1c1c;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+input {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #1c1c1c;
+    border-radius: 8px;
+    background-color: #a2bbcf;
+}
+
+input::placeholder {
+    color:black;
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #1c1c1c;
+    font-size: 24px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.equalBtn {
+    background-color:#aee0e3;
+}
+
+.operator {
+    color: #531592;
+}
